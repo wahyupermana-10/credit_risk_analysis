@@ -7,14 +7,6 @@ Batch :HCK 6
 
 ---
 
-Link Dashboard:
-[Tableau](https://colab.research.google.com/github/camenduru/stable-diffusion-webui-colab/blob/main/lite/stable_diffusion_webui_colab.ipynb)
-
-Link Deploy:
-[Hugging Face](https://colab.research.google.com/github/camenduru/stable-diffusion-webui-colab/blob/main/lite/stable_diffusion_webui_colab.ipynb)
-
----
-
 # Credit Risk Analysis
 
 Projek ini akan membahas mengenai faktor - faktor penyebab seorang nasabah memiliki status peminjaman yang tidak berisiko dan tidak berisiko. Dalam projek ini juga akan dibuat sebuah model machine learning untuk memprediksi nasabah memiliki status yang beresiko dan tidak beresiko berdasarkan data historisnya.
@@ -22,4 +14,20 @@ Projek ini akan membahas mengenai faktor - faktor penyebab seorang nasabah memil
 ---
 
 # Kesimpulan
-# credit_risk_analysis
+
+Kesimpulan pada sisi bisnis:
+
+- Bisa lebih diperhatikan lebih lanjut kategori - kategori yang mengindikasikan seorang nasabah memiliki resiko credit risk tinggi. Agar dapat menentukan langkah yang tepat untuk meminimalkan resiko.
+- Personalisasi penawaran pinjaman atau pengembangan produk khusus kepada nasabah. Karena pada data yang kita dapatkan terdapat misalnya profesi tertentu yang banyak melakukan pinjaman. Kita bisa personalisasi atau mengembangkan produk khusus untuk menarik minat nasabah baru atau membuat pinjaman dari nasabah berprofesi lain yang masih rendah bisa meningkat.
+
+Kesimpulan pada model:
+
+- Metrik yang digunakan adalah roc_auc karena bisa digunakan untuk data yang inbalance
+- Model mengalami overfit.
+- Model kurang bagus dalam memprediksi nasabah yang memiliki kredit beresiko tinggi. Hal ini disebabkan oleh data yang tidak seimbang antara data target.
+
+Saran untuk perbaikan model:
+
+- Bisa mencoba menggunakan model machine learning lain yang lebih tahan dengan data inbalance seperti Gradient Boosting, SVM, AdaBoost.
+- Karena jumlah data yang banyak, bisa mempertimbangkan menggunakan deep learning. Selain itu, deep learning bisa menggunakan bobot untuk membantu dalam situasi data yang inbalance.
+- Menggunakan Regularisasi untuk mengurangi overfitting.
